@@ -19,12 +19,12 @@ class HBNBCommand(cmd.Cmd):
         print("Exits the console gracefully. Usage: Ctrl D")
 
     def do_quit(self, line):
-        """Exits the console gracefully. Usage: quit"""
+        """Quit command to exit the program"""
         return True
 
     def help_quit(self):
         """Quit command. Usage: quit"""
-        print("Exits the console gracefully. Usage: quit")
+        print("Quit command to exit the program")
 
     def emptyline(self):
         """This line prints nothing"""
