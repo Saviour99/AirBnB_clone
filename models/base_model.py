@@ -10,7 +10,7 @@ class BaseModel:
     BaseModel class that defines all common attributes/method for other classes
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
         """Initialiazation of the BaseModel Object"""
 
         self.id = str(uuid.uuid4())

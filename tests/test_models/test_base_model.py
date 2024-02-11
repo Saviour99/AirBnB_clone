@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Base_model Module Testing"""
 
+
 from models.base_model import BaseModel
 import unittest
 
@@ -31,8 +32,10 @@ class TestBaseModel(unittest.TestCase):
 
         self.assertEqual(MyTest_dict["__class__"], "BaseModel")
         self.assertEqual(MyTest_dict["id"], MyTest.id)
-        self.assertEqual(MyTest_dict["created_at"], MyTest.created_at.isoformat())
-        self.assertEqual(MyTest_dict["updated_at"], MyTest.updated_at.isoformat())
+        My_created_at = MyTest.created_at.isoformat()
+        self.assertEqual(MyTest_dict["created_at"], My_created_at)
+        My_update = MyTest.updated_at.isoformat()
+        self.assertEqual(MyTest_dict["updated_at"], My_update)
 
     def test_str(self):
         MyTest = BaseModel()
@@ -41,5 +44,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn(MyTest.id, str(MyTest))
         self.assertIn(str(MyTest.__dict__), str(MyTest))
 
-if __name__  == "__main__":
+
+if __name__ == "__main__":
     unittest.main()
