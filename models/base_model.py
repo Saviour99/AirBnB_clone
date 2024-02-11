@@ -11,7 +11,10 @@ class BaseModel:
     BaseModel class that defines all common attributes/method for other classes
     """
 
-    if kwargs:
+    def __init__(self, *args, **kwargs):
+        """Initialiazation of the BaseModel Object"""
+
+        if kwargs:
             for key, value in kwargs.items():
                 if key == "__class__":
                     continue
@@ -27,6 +30,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
 
     def save(self):
         """Update the current datetime"""
