@@ -3,7 +3,11 @@
 
 import uuid
 from datetime import datetime
+<<<<<<< HEAD
 from models import storage
+=======
+import models
+>>>>>>> 016f71f3d1bbe303e41caecd8e2dc75479fe9256
 
 
 class BaseModel:
@@ -32,6 +36,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+<<<<<<< HEAD
             storage.new(self)
 
     def __str__(self):
@@ -39,12 +44,19 @@ class BaseModel:
 
         return "[{}] ({}) {}".\
             format(type(self).__name__, self.id, self.__dict__)
+=======
+            models.storage.new(self)
+>>>>>>> 016f71f3d1bbe303e41caecd8e2dc75479fe9256
 
     def save(self):
         """updates the public instance attribute updated_at"""
 
         self.updated_at = datetime.now()
+<<<<<<< HEAD
         storage.save()
+=======
+        models.storage.save()
+>>>>>>> 016f71f3d1bbe303e41caecd8e2dc75479fe9256
 
     def to_dict(self):
         """returns a dictionary containing all keys/values of __dict__"""
