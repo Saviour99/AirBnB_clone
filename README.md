@@ -1,8 +1,8 @@
-#AirBnB_clone Project
+**AirBnB_clone Project**
 
 
 
-#Project Description
+**Project Description**
 
 
 This is the first part of the AirBnB clone project where we worked on the backend of the project whiles interfacing it with a console application with the help of the cmd module in python.
@@ -30,11 +30,11 @@ Doing operations on objects (count, compute stats, etc…)
 Updating attributes of an object
 Destroying an objec
 
-#How to start it
+**How to start it**
 
 These instructions will get you a copy of the project up and running on your local machine (Linux distro) for development and testing purposes.
 
-#Installing
+**Installing**
 
 You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
 
@@ -61,7 +61,7 @@ models/place.py: Place class that inherits from BaseModel
 models/review.py: Review class that inherits from BaseModel
 
 
-#How to use it
+**How to use it**
 
 It can work in two different modes:
 
@@ -153,6 +153,6 @@ count	Retrieve the number of instances of a class.
 Usage	<class name>.count()
 
 
-#AUthors
+**AUthors**
 Saviour Assandoh |github Saviour99
 Alpha Yohanna |email: alphayohanna2023@gmail.com
