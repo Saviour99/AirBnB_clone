@@ -32,8 +32,8 @@ section.filters .amenities {
     text-align: center;
     line-height: 45%;
 }
-section.filters ul.popover {
-    display: one;
+.loc-amen ul.popover {
+    display: none;
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
@@ -43,15 +43,22 @@ section.filters ul.popover {
     width: 100%;
 }
 ul {
-    line-height: 100%;
+    line-height: 40%;
     list-style: none;
     padding-left: 0;
+}
+h2 {
+    line-height: 50%;
+    margin-bottom: 0;
 }
 .popover li {
     vertical-align: middle;
     margin: 10px;
 }
-.locations .popover:hover {
+.locations:hover .popover{
+    display: block;
+}
+.amenities:hover .popover{
     display: block;
 }
 h3 {
