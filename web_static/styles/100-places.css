@@ -102,7 +102,7 @@ section.places article .mini {
 .places .amenities {
     margin-top: 40px;
 }
-.places h2 {
+.places .amenities h2, .reviews h2 {
     font-size: 16px;
     border-bottom: 1px solid #DDDDDD;
     padding-bottom: 7px;
